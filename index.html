@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
@@ -7,7 +7,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Conference ticket generator</title>
-
+  <link rel="stylesheet" href="css/style.css">
+  
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -15,43 +16,54 @@
   </style>
 </head>
 <body>
-
   <!-- Form starts -->
+  <main>
+    <div class="container-desktop" id="div-ticket">
 
-  Your Journey to Coding Conf 2025 Starts Here!
+      <img src="assets/images/logo-full.svg" alt="Logo Coding Conf" id="logo">
 
-  Secure your spot at next year's biggest coding conference.
-
-  Upload Avatar
-  Drag and drop or click to upload
-  Upload your photo (JPG or PNG, max size: 500KB).
-
-  Full Name
-
-  Email Address
-  example@email.com
-
-  GitHub Username
-  @yourusername
-
-  Generate My Ticket
-
-  <!-- Form ends -->
-
-  <!-- Generated tickets starts -->
-
-  Congrats, <!-- Full Name -->! Your ticket is ready.
-
-  We've emailed your ticket to <!-- Email Address --> and will send updates in the run up to the event.
-
-  Coding Conf
-  Jan 31, 2025 / Austin, TX
-
-  <!-- Generated tickets ends -->
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+      <h1>Your Journey to Coding Conf 2025 Starts Here!</h1>
+
+      <p>Secure your spot at next year's biggest coding conference.</p>
+
+      <form action="#" method="post">
+        <div>
+          <label for="avatar">Upload Avatar</label>
+          <input type="file" name="avatar" id="avatar" hidden>
+          <label for="avatar">
+            <div>
+              <img src="assets/images/icon-upload.svg" alt="Icone d'upload"> Drag and drop or click to upload
+            </div>
+          </label>
+          <label for="avatar" id="info-image"><img src="assets/images/icon-info.svg" alt="Icone d'information"> Upload your photo (JPG or PNG, max size: 500KB).</label>
+        </div>
+        
+
+        <label for="name">Full Name</label>
+        <input type="text" name="name" id="name" placeholder="Your full name">
+
+        <label for="email">Email Address</label>
+        <input type="email" name="email" id="email" placeholder="example@email.com">
+        
+
+        <label for="github-username">GitHub Username</label>
+        <input type="text" name="github-username" id="github-username" placeholder="@yourusername">
+        
+        <input type="submit" value="Generate My Ticket">
+      </form>
+      
+
+      
+
+      
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+        Coded by <a href="#">Antoine Petit</a>.
+      </div>
+    <!-- Generated tickets ends -->
+    </div>
+  </main>
+  
 </body>
 </html>
