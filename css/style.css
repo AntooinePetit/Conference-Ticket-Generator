@@ -135,6 +135,7 @@ main{
       border-radius: 10px;
       color: var(--neutral300);
       font-size: 18px;
+      transition: all 0.3s ease;
    }
 
    input:focus{
@@ -159,11 +160,12 @@ main{
       background-color: var(--orange500);
    }
 
+   
    label{
       padding-top: 15px;
    }
-
-   form > div > label:nth-child(3) > div{
+   
+   .upload-area{
       justify-items: center;
       gap: 10px;
       padding: 25px;
@@ -171,16 +173,21 @@ main{
       border: 1px dashed var(--neutral500);
       border-radius: 15px;
       text-align: center;
+      transition: all 0.3s ease;
    }
 
-   form > div > label:nth-child(3) > div:hover{
+   .upload-area:hover{
       cursor: pointer;
+      background-color: var(--neutral500);
    }
-
-   form > div > label:nth-child(3) > div > img{
+   .upload-area.dragover{
+      background-color: var(--neutral500);
+   }
+   #upload-image{
       background-color: var(--neutral700);
       padding: 10px;
       border-radius: 10px;
+      max-width: 25px;
    }
 }
 
@@ -297,7 +304,7 @@ main{
       url("/assets/images/pattern-circle.svg"),
       url("/assets/images/pattern-circle.svg");
    }
-   #div-form > form > div > label:nth-child(3) > div{
+   .upload-area{
       font-size: 12px;
       padding: 15px;
    }
