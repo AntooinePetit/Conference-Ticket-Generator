@@ -82,12 +82,12 @@ p{
 
 main{
    background-image: 
-   url("/assets/images/background-desktop.png"),
-   url("/assets/images/pattern-lines.svg"),
-   url("/assets/images/pattern-squiggly-line-bottom-desktop.svg"),
-   url("/assets/images/pattern-squiggly-line-top.svg"),
-   url("/assets/images/pattern-circle.svg"),
-   url("/assets/images/pattern-circle.svg");
+   url("../assets/images/background-desktop.png"),
+   url("../assets/images/pattern-lines.svg"),
+   url("../assets/images/pattern-squiggly-line-bottom-desktop.svg"),
+   url("../assets/images/pattern-squiggly-line-top.svg"),
+   url("../assets/images/pattern-circle.svg"),
+   url("../assets/images/pattern-circle.svg");
    background-position-x: center, center, left, right, 3%, 77%;
    background-position-y: center, top, bottom, 10%, -12%, 55%;
    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
@@ -254,7 +254,7 @@ main{
    }
 
    #ticket{
-      background: url(/assets/images/pattern-ticket.svg);
+      background: url("../assets/images/pattern-ticket.svg");
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
@@ -335,12 +335,12 @@ main{
 @media screen and (max-width: 1024px) {
    main{
       background-image: 
-      url("/assets/images/background-tablet.png"),
-      url("/assets/images/pattern-lines.svg"),
-      url("/assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg"),
-      url("/assets/images/pattern-squiggly-line-top.svg"),
-      url("/assets/images/pattern-circle.svg"),
-      url("/assets/images/pattern-circle.svg");
+      url("../assets/images/background-tablet.png"),
+      url("../assets/images/pattern-lines.svg"),
+      url("../assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg"),
+      url("../assets/images/pattern-squiggly-line-top.svg"),
+      url("../assets/images/pattern-circle.svg"),
+      url("../assets/images/pattern-circle.svg");
    }  
 }
 
@@ -349,12 +349,12 @@ main{
 @media screen and (max-width: 767px) {
    main{
       background-image: 
-      url("/assets/images/background-mobile.png"),
-      url("/assets/images/pattern-lines.svg"),
-      url("/assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg"),
-      url("/assets/images/pattern-squiggly-line-top.svg"),
-      url("/assets/images/pattern-circle.svg"),
-      url("/assets/images/pattern-circle.svg");
+      url("../assets/images/background-mobile.png"),
+      url("../assets/images/pattern-lines.svg"),
+      url("../assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg"),
+      url("../assets/images/pattern-squiggly-line-top.svg"),
+      url("../assets/images/pattern-circle.svg"),
+      url("../assets/images/pattern-circle.svg");
    }
    .upload-area label{
       font-size: 12px;
