@@ -32,7 +32,7 @@ function uploadImage(event){
          fileInput.files = dataTransfer.files;
 
          imageUrl = URL.createObjectURL(file);
-         const avatar = document.querySelector('#upload-area label')
+         const avatar = document.querySelector('#label-upload')
          avatar.innerHTML = `
             <img src="${imageUrl}" alt="Image téléchargée" id="uploaded-image">
             <div id="uploaded-image-div">
@@ -41,9 +41,25 @@ function uploadImage(event){
             </div
          `;
          uploadArea.classList.remove('hoverable')
-         removeImage = document.querySelector('#remove-image')
-         changeImage = document.querySelector('#change-image')
+         infoImage.innerHTML = `<img src="assets/images/icon-info.svg" alt="Icone d'information"> Upload your photo (JPG or PNG, max size: 500KB).`
+         infoImage.classList.add('info-image')
+         infoImage.classList.remove('error-text')
       }
+      const changeImage = document.querySelector('#change-image');
+      changeImage.addEventListener('click', () => {
+         fileInput.click()
+      })
+      const removeImage = document.querySelector('#remove-image');
+      removeImage.addEventListener('click', () => {
+         fileInput.value = ""
+         const avatar = document.querySelector('#label-upload')
+         avatar.innerHTML = `<img src="assets/images/icon-upload.svg" alt="Icone d'upload" id="upload-image">
+              Drag and drop or click to upload`
+         uploadArea.classList.add('hoverable')
+         setTimeout(() => {
+            imageUrl = ""
+         }, 100);
+      })
      
    }
 }
@@ -54,8 +70,7 @@ const uploadArea = document.querySelector('#upload-area')
 const fileInput = document.querySelector('#avatar')
 let imageUrl = "";
 const infoImage = document.querySelector('#info-image')
-let removeImage;
-let changeImage;
+
 
 uploadArea.addEventListener('dragover', (e) => {
    e.preventDefault()
