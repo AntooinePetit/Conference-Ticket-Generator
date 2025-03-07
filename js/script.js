@@ -11,7 +11,7 @@ function uploadImage(event){
 
    if (files && files.length > 0) {
       if (files.length > 1) {
-         infoImage.innerHTML = `<img src="assets/images/icon-info.svg" alt="Icone d'information"> You can't upload multiple photos. Please upload a single photo`
+         infoImage.innerHTML = `<img src="../assets/images/icon-info.svg" alt="Icone d'information"> You can't upload multiple photos. Please upload a single photo`
          infoImage.classList.add('error-text')
          infoImage.classList.remove('info-image')
          return;
@@ -20,7 +20,7 @@ function uploadImage(event){
       const file = files[0];
 
       if(file.size > 500000){
-         infoImage.innerHTML = `<img src="assets/images/icon-info.svg" alt="Icone d'information"> File too large. Please upload a photo under 500KB.`
+         infoImage.innerHTML = `<img src="../assets/images/icon-info.svg" alt="Icone d'information"> File too large. Please upload a photo under 500KB.`
          infoImage.classList.add('error-text')
          infoImage.classList.remove('info-image')
          return
@@ -41,7 +41,7 @@ function uploadImage(event){
             </div
          `;
          uploadArea.classList.remove('hoverable')
-         infoImage.innerHTML = `<img src="assets/images/icon-info.svg" alt="Icone d'information"> Upload your photo (JPG or PNG, max size: 500KB).`
+         infoImage.innerHTML = `<img src="../assets/images/icon-info.svg" alt="Icone d'information"> Upload your photo (JPG or PNG, max size: 500KB).`
          infoImage.classList.add('info-image')
          infoImage.classList.remove('error-text')
       }
@@ -53,7 +53,7 @@ function uploadImage(event){
       removeImage.addEventListener('click', () => {
          fileInput.value = ""
          const avatar = document.querySelector('#label-upload')
-         avatar.innerHTML = `<img src="assets/images/icon-upload.svg" alt="Icone d'upload" id="upload-image">
+         avatar.innerHTML = `<img src="../assets/images/icon-upload.svg" alt="Icone d'upload" id="upload-image">
               Drag and drop or click to upload`
          uploadArea.classList.add('hoverable')
          setTimeout(() => {
@@ -149,7 +149,7 @@ form.addEventListener('submit', (e) => {
 
    if(fullName == ""){
       inputName.classList.add('error-input')
-      errorName.innerHTML = `<img src="assets/images/icon-info.svg" alt="Icone d'information">Please enter a valid name`
+      errorName.innerHTML = `<img src="../assets/images/icon-info.svg" alt="Icone d'information">Please enter a valid name`
    } else {
       inputName.classList.remove('error-input')
       errorName.innerHTML = ""
@@ -158,7 +158,7 @@ form.addEventListener('submit', (e) => {
 
    if(email == ""){
       inputEmail.classList.add('error-input')
-      errorEmail.innerHTML = `<img src="assets/images/icon-info.svg" alt="Icone d'information">Please enter a valid email adress`
+      errorEmail.innerHTML = `<img src="../assets/images/icon-info.svg" alt="Icone d'information">Please enter a valid email adress`
    } else {
       inputEmail.classList.remove('error-input')
       errorEmail.innerHTML = ""
@@ -166,7 +166,7 @@ form.addEventListener('submit', (e) => {
 
    if(githubUsername == "" || !githubUsername.startsWith("@")){
       inputGithub.classList.add('error-input')
-      errorGithub.innerHTML = `<img src="assets/images/icon-info.svg" alt="Icone d'information">Please enter a valid github username`
+      errorGithub.innerHTML = `<img src="../assets/images/icon-info.svg" alt="Icone d'information">Please enter a valid github username`
    } else {
       inputGithub.classList.remove('error-input')
       errorGithub.innerHTML = ""
@@ -176,7 +176,7 @@ form.addEventListener('submit', (e) => {
       const main = document.querySelector('main')
       const numeroTicket = Math.floor(Math.random()*99998+1)
       main.innerHTML = `
-      <img src="assets/images/logo-full.svg" alt="Logo Coding Conf" id="logo">
+      <img src="../assets/images/logo-full.svg" alt="Logo Coding Conf" id="logo">
       <div id="div-ticket" class="container-desktop">
          <h1>Congrats, <span class="user-info">${fullName}</span>! Your ticket is ready.</h1>
    
@@ -185,7 +185,7 @@ form.addEventListener('submit', (e) => {
          <div id="ticket">
             <div>
             <div id="ticket-top">
-               <img src="/assets/images/logo-mark.svg" alt="Logo de Coding Conf">
+               <img src="./assets/images/logo-mark.svg" alt="Logo de Coding Conf">
                <span>
                   <h2>Coding Conf</h2>
                   <p>Jan 31, 2025 / Austin, TX</p>
@@ -196,7 +196,7 @@ form.addEventListener('submit', (e) => {
                <img src="${imageUrl}" alt="Photo de l'utilisateur" id="profile-picture">
                <span>
                   <h3>${fullName}</h3>
-                  <p><img src="/assets/images/icon-github.svg" alt="Icone github">${githubUsername}</p>
+                  <p><img src="./assets/images/icon-github.svg" alt="Icone github">${githubUsername}</p>
                </span>
             </div>
             </div>
