@@ -185,7 +185,7 @@ form.addEventListener('submit', (e) => {
          <div id="ticket">
             <div>
             <div id="ticket-top">
-               <img src="./assets/images/logo-mark.svg" alt="Logo de Coding Conf">
+               <img src="../assets/images/logo-mark.svg" alt="Logo de Coding Conf">
                <span>
                   <h2>Coding Conf</h2>
                   <p>Jan 31, 2025 / Austin, TX</p>
@@ -196,7 +196,7 @@ form.addEventListener('submit', (e) => {
                <img src="${imageUrl}" alt="Photo de l'utilisateur" id="profile-picture">
                <span>
                   <h3>${fullName}</h3>
-                  <p><img src="./assets/images/icon-github.svg" alt="Icone github">${githubUsername}</p>
+                  <p><img src="../assets/images/icon-github.svg" alt="Icone github">${githubUsername}</p>
                </span>
             </div>
             </div>
