@@ -28,16 +28,17 @@
       <p>Secure your spot at next year's biggest coding conference.</p>
 
       <form action="#" method="post">
+        <label for="avatar">Upload Avatar</label>
         <div>
-          <label for="avatar">Upload Avatar</label>
-          <input type="file" name="avatar" id="avatar" hidden>
-          <label for="avatar" >
-            <div class="upload-area">
-              <img src="assets/images/icon-upload.svg" alt="Icone d'upload" id="upload-image"> Drag and drop or click to upload
-            </div>
-          </label>
-          <label for="avatar" id="info-image"><img src="assets/images/icon-info.svg" alt="Icone d'information"> Upload your photo (JPG or PNG, max size: 500KB).</label>
+          <div class="upload-area hoverable" id="upload-area">
+            <input type="file" name="avatar" id="avatar" hidden accept="image/png, image/jpeg">
+            <label for="avatar" id="label-upload">
+              <img src="assets/images/icon-upload.svg" alt="Icone d'upload" id="upload-image">
+              Drag and drop or click to upload
+            </label>
+          </div>
         </div>
+        <p id="info-image" class="info-image"><img src="assets/images/icon-info.svg" alt="Icone d'information"> Upload your photo (JPG or PNG, max size: 500KB).</p>
         
 
         <label for="name">Full Name</label>
@@ -62,7 +63,7 @@
       
       <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-        Coded by <a href="#">Antoine Petit</a>.
+        Coded by <a href="https://github.com/AntooinePetit">Antoine Petit</a>.
       </div>
     </div>
   </main>

@@ -69,6 +69,10 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
+- Drag/Drop JS
+- Multiple backgrounds css
+- Manipulating input file with CSS/JS
+- Creating a fake URL to use an image without actually uploading it
 Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
 To see how you can add code snippets, see below:
@@ -106,9 +110,8 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
+- Website - [Antoine Petit](https://github.com/AntooinePetit)
 - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
 
 **Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
